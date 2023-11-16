@@ -3,22 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Űrlap</title>
 </head>
 <body>
    
     <h1>BORÁSZAT</h1>
 
     <form action="">
+        
+        Email cím <br>
+
+        <input type="email">
+
+        <br>Jelszó<br>
+
+        <input type="password">
+
+        <br>Név<br>
+        <input type="text">
+
+
+
 
         <fieldset>
             <legend>Bor fajták</legend>
             <br>
-            <input type="checkbox"name="vmi" id="vm1">
-            <label for="vm1">Vörös bor</label>
+            <input type="checkbox"name="Vörösbor" id="Vörösbor">
+            <label for="Vörösbor">Vörös bor</label>
             <br>
+            <input type="checkbox"name="Aszú" id="Aszú">
+            <label for="Aszú">Tokaji aszúbor</label>
+            <br>
+            <input type="checkbox"name="Furmint" id="Furmint">
+            <label for="Furmint">Furmint</label>
+            <br>
+            <input type="checkbox"name="Hubertus" id="Hubertus">
+            <label for="Hubertus">Hubertus</label>
+            <br>
+            <input type="checkbox"name="Rizling" id="Rizling">
+            <label for="Rizling">Rizling</label>
+            <br>
+             
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Mennyiség</legend>
+
+            <input type="number"name="Liter" id="Liter">
+            <label for="Liter">Liter</label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Címke színe</legend>
+
+            <input type="color">
+        </fieldset>
+
+        <fieldset>
+            <legend>Kiszállítás</legend>
+
+            Kérek
+            <input type="radio"> <br>
+
+            Nem kérek
+            <input type="radio"> 
+            
 
         </fieldset>
+
+        <fieldset>
+            <input type="button" value="Megrendelem" >
+            <input type="reset" value="Mégse" >
+
+
+        </fieldset>
+        
 
 
     </form>
