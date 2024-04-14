@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Étterem Weboldal</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .card {
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Bizar bisztró</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Étlap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Kapcsolat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reservation">Foglalás</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 id="menu" class="text-center my-5">Étlap</h1>
+    <div class="row">
+      <!-- Képek és kártyák -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="langos.png" class="card-img-top" alt="Kép 2">
+          <div class="card-body">
+            <h5 class="card-title">Bizar lángos</h5>
+            <p class="card-text">Sajtos, tejfölös, friss... Nem lopott. <strong>Kérésre</strong> tészta nélkül is készítjük! 900Ft</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="Pizza.png" class="card-img-top" alt="Kép 2">
+          <div class="card-body">
+            <h5 class="card-title">Pizza</h5>
+            <p class="card-text">Több ízben is készül, <strong>DE</strong> a hawai pizza nem pizza! 2000Ft-3500Ft</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="Whisky.png" class="card-img-top" alt="Kép 2">
+          <div class="card-body">
+            <h5 class="card-title">Whisky</h5>
+            <p class="card-text">Eredeti skót whisky, nem lopott!! 9999Ft</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="hamburger.png" class="card-img-top" alt="Kép 2">
+          <div class="card-body">
+            <h5 class="card-title">Hamburger</h5>
+            <p class="card-text">Fincsi mincsi 2000Ft</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="Black.png" class="card-img-top" alt="Kép 2">
+          <div class="card-body">
+            <h5 class="card-title">Futár szolgálat</h5>
+            <p class="card-text">Gyorsabb futárszolgálat. 1500Ft</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="Wip.jpg" class="card-img-top" alt="Kép 2">
+          <div class="card-body">
+            <h5 class="card-title">W.I.P</h5>
+            <p class="card-text">Work In Progress</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <h2 id="contact" class="text-center my-5">Kapcsolat</h2>
+    <p class="text-center">Cím: Budapest, Kossuth u. 12.</p>
+    <p class="text-center">Telefonszám: +36 1 234 5678</p>
+    <p class="text-center">E-mail: info@etterem.hu</p>
+    <h2 id="reservation" class="text-center my-5">Foglalás</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Név</label>
+        <input type="text" class="form-control" id="name" placeholder="Kérjük, adja meg a nevét">
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail cím</label>
+        <input type="email" class="form-control" id="email" placeholder="Kérjük, adja meg az e-mail címét">
+      </div>
+      <div class="form-group">
+        <label for="date">Dátum</label>
+        <input type="date" class="form-control" id="date">
+      </div>
+      <div class="form-group">
+        <label for="time">Időpont</label>
+        <input type="time" class="form-control" id="time">
+      </div>
+      <button type="submit" class="btn btn-primary">Foglalás küldése</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
